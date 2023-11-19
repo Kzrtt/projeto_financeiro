@@ -40,13 +40,19 @@ class Header extends StatelessWidget {
             : Center(),
         Positioned(
           top: constraints.maxHeight * .09,
-          right: 20,
-          child: Text(
-            title,
-            style: TextStyle(
-              color: AppPalette.CONTRAST_COLOR,
-              fontWeight: FontWeight.w700,
-              fontSize: constraints.maxHeight * .028,
+          right: 5,
+          child: SizedBox(
+            height: 20,
+            width: constraints.maxWidth * .6,
+            child: Text(
+              title,
+              overflow: TextOverflow.ellipsis,
+              textAlign: TextAlign.end,
+              style: TextStyle(
+                color: AppPalette.CONTRAST_COLOR,
+                fontWeight: FontWeight.w700,
+                fontSize: constraints.maxHeight * .028,
+              ),
             ),
           ),
         ),

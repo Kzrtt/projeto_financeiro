@@ -107,11 +107,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
           ),
           const SizedBox(height: 30),
-          buildProfileButton(
-            "Material de Apoio",
-            "Textos para te auxiliar a economizar",
-            Icons.book,
-            .15,
+          InkWell(
+            onTap: () =>
+                Navigator.of(context).pushNamed(AppRoutes.SUPPORT_MATERIAL),
+            child: buildProfileButton(
+              "Material de Apoio",
+              "Textos para te auxiliar a economizar",
+              Icons.book,
+              .15,
+            ),
           ),
           const SizedBox(height: 30),
           buildProfileButton(
