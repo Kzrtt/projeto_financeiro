@@ -31,25 +31,25 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        AppRoutes.OPENING_SCREEN: (ctx) => LoginScreen(),
-        AppRoutes.HOME_TAB: (ctx) => HomeTabScreen(),
-        AppRoutes.ADD_ADDICTION: (ctx) => AddictionForm(),
-        AppRoutes.ADD_EXPENSE: (ctx) => ExpensesForm(),
-        AppRoutes.UPDATE_INFO: (ctx) => UpdateUserInfoScreen(),
-        AppRoutes.ASK_QUESTION: (ctx) => QuestionScreen(),
-        AppRoutes.SUPPORT_MATERIAL: (ctx) => SuportMaterial(),
+        AppRoutes.OPENING_SCREEN: (ctx) => const LoginScreen(),
+        AppRoutes.HOME_TAB: (ctx) => const HomeTabScreen(),
+        AppRoutes.ADD_ADDICTION: (ctx) => const AddictionForm(),
+        AppRoutes.ADD_EXPENSE: (ctx) => const ExpensesForm(),
+        AppRoutes.UPDATE_INFO: (ctx) => const UpdateUserInfoScreen(),
+        AppRoutes.ASK_QUESTION: (ctx) => const QuestionScreen(),
+        AppRoutes.SUPPORT_MATERIAL: (ctx) => const SuportMaterial(),
 
         //? Material de Apoio
         AppRoutes.DESENV_PROFISSIONAL_E_FINANCEIRO: (ctx) =>
-            DesenvProfissionalEFinanceiro(),
+            const DesenvProfissionalEFinanceiro(),
         AppRoutes.ESTUDO_DE_CASO_E_ATV_PRATICA: (ctx) =>
-            EstudoDeCasoEAtvPratica(),
+            const EstudoDeCasoEAtvPratica(),
         AppRoutes.ESTUDO_E_BUSCA_DE_CONHECIMENTO: (ctx) =>
-            EstudoEBuscaDeConhecimento(),
-        AppRoutes.GESTAO_DE_DIVIDAS: (ctx) => GestaoDeDividas(),
-        AppRoutes.INVESTIMENTOS: (ctx) => Investimentos(),
-        AppRoutes.RESERVA_DE_EMERGENCIA: (ctx) => ReservaDeEmergencia(),
-        AppRoutes.INTRODUCAO: (ctx) => Introducao(),
+            const EstudoEBuscaDeConhecimento(),
+        AppRoutes.GESTAO_DE_DIVIDAS: (ctx) => const GestaoDeDividas(),
+        AppRoutes.INVESTIMENTOS: (ctx) => const Investimentos(),
+        AppRoutes.RESERVA_DE_EMERGENCIA: (ctx) => const ReservaDeEmergencia(),
+        AppRoutes.INTRODUCAO: (ctx) => const Introducao(),
       },
     );
   }

@@ -78,7 +78,7 @@ class _SuportMaterialState extends State<SuportMaterial> {
                           Navigator.of(context).pushNamed(AppRoutes.INTRODUCAO),
                       child: buildProfileButton(
                         "Introdução",
-                        "placeholder",
+                        "Introdução a educação financeira",
                         Icons.book,
                         .15,
                         constraints,
@@ -90,7 +90,7 @@ class _SuportMaterialState extends State<SuportMaterial> {
                           .pushNamed(AppRoutes.ESTUDO_E_BUSCA_DE_CONHECIMENTO),
                       child: buildProfileButton(
                         "Estudo e Busca de conhecimento",
-                        "placeholder",
+                        "Aprenda mais, conhecimento é poder",
                         Icons.book,
                         .15,
                         constraints,
@@ -102,7 +102,7 @@ class _SuportMaterialState extends State<SuportMaterial> {
                           .pushNamed(AppRoutes.GESTAO_DE_DIVIDAS),
                       child: buildProfileButton(
                         "Gestão de Dívidas",
-                        "placeholder",
+                        "Aprenda a organizar suas dívidas",
                         Icons.book,
                         .15,
                         constraints,
@@ -114,7 +114,7 @@ class _SuportMaterialState extends State<SuportMaterial> {
                           .pushNamed(AppRoutes.INVESTIMENTOS),
                       child: buildProfileButton(
                         "Investimentos",
-                        "placeholder",
+                        "Começe a investir",
                         Icons.book,
                         .15,
                         constraints,
@@ -126,7 +126,7 @@ class _SuportMaterialState extends State<SuportMaterial> {
                           .pushNamed(AppRoutes.RESERVA_DE_EMERGENCIA),
                       child: buildProfileButton(
                         "Reserva de emergência",
-                        "placeholder",
+                        "Prepare-se para possiveis emergências da vida",
                         Icons.book,
                         .15,
                         constraints,
@@ -138,7 +138,7 @@ class _SuportMaterialState extends State<SuportMaterial> {
                           AppRoutes.DESENV_PROFISSIONAL_E_FINANCEIRO),
                       child: buildProfileButton(
                         "Desenv Profissional e Financeiro",
-                        "placeholder",
+                        "A mudança começa por você",
                         Icons.book,
                         .15,
                         constraints,
@@ -150,7 +150,7 @@ class _SuportMaterialState extends State<SuportMaterial> {
                           .pushNamed(AppRoutes.ESTUDO_DE_CASO_E_ATV_PRATICA),
                       child: buildProfileButton(
                         "Estudo de caso e atv prática",
-                        "placeholder",
+                        "Analises detalhadas do mundo real",
                         Icons.book,
                         .15,
                         constraints,
