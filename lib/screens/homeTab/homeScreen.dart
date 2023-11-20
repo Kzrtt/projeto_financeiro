@@ -188,7 +188,7 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(height: 50),
           BaseKitBox(
             constraints: widget.constraints,
-            kitName: "Visão Geral",
+            kitName: "Total Gasto: $total",
             height: 280,
             widget: Column(
               children: [
