@@ -28,8 +28,10 @@ class _ExpensesFormState extends State<ExpensesForm> {
     AppController.instance.user.accountBalance -= expense.value;
     if (isEssencial) {
       AppController.instance.user.essencials.add(expense);
+      AppController.instance.user.accountBalance -= expense.value;
     } else {
       AppController.instance.user.nonEssencials.add(expense);
+      AppController.instance.user.accountBalance -= expense.value;
     }
   }
 

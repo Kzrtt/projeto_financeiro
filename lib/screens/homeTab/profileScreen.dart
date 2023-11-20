@@ -118,13 +118,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
           ),
           const SizedBox(height: 30),
-          buildProfileButton(
-            "Perguntas Frequentes",
-            "Pergutas frequentes sobre economia",
-            Icons.question_mark,
-            .15,
-          ),
-          const SizedBox(height: 30),
           InkWell(
             onTap: () =>
                 Navigator.of(context).pushNamed(AppRoutes.ASK_QUESTION),

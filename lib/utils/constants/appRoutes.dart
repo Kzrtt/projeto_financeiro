@@ -6,6 +6,7 @@ class AppRoutes {
   static const UPDATE_INFO = "update-info";
   static const ASK_QUESTION = "ask-question";
   static const SUPPORT_MATERIAL = "support-material";
+  static const FREQUENTLY_ASKED = "frequently-asked";
 
   //? Material de Apoio
   static const DESENV_PROFISSIONAL_E_FINANCEIRO = "a";

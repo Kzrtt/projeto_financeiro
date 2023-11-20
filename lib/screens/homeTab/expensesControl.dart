@@ -54,7 +54,7 @@ class _ExpensesControlState extends State<ExpensesControl> {
                     children: [
                       const SizedBox(height: 10),
                       Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: const EdgeInsets.all(10),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [

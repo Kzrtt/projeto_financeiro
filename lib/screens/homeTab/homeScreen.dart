@@ -20,15 +20,11 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  List<String> topics = const ["teste1", "teste2", "teste3", "teste4"];
-  List<String> values = const ["R\$1500", "R\$2200", "R\$1200", "R\$250"];
-  List<bool> status = const [false, true, false, true];
-  List<MaterialColor> colors = const [
-    Colors.red,
-    Colors.amber,
-    Colors.blue,
-    Colors.orange
-  ];
+  List<String> aux = [];
+  List<String> topics = [];
+  List<String> values = [];
+  List<bool> status = [];
+  double total = 0;
   final accountBalanceController = TextEditingController();
   final accountBalanceFormGlobalKey = GlobalKey<FormState>();
 
@@ -36,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.all(constraints.maxHeight * .01),
+          padding: EdgeInsets.only(left: constraints.maxHeight * .05),
           child: SizedBox(
             height: constraints.maxHeight * .05,
             width: constraints.maxWidth,
@@ -44,16 +40,6 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                //? bola do tópico
-                SizedBox(
-                  height: constraints.maxHeight * .05,
-                  width: constraints.maxWidth * .09,
-                  child: Icon(
-                    Icons.circle,
-                    color: colors[index],
-                    size: constraints.maxHeight * .02,
-                  ),
-                ),
                 //? texto do tópico
                 SizedBox(
                   height: constraints.maxHeight * .05,
@@ -73,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 //? valor tópico
-                Container(
+                SizedBox(
                   height: constraints.maxHeight * .05,
                   width: constraints.maxWidth * .36,
                   child: Padding(
@@ -101,7 +87,31 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    topics = [];
+    values = [];
+    status = [];
+    total = 0;
+  }
+
+  @override
   Widget build(BuildContext context) {
+    for (var element in AppController.instance.user.essencials) {
+      topics.add(element.name);
+      values.add(element.value.toString());
+      status.add(false);
+      total += element.value;
+    }
+
+    for (var element in AppController.instance.user.nonEssencials) {
+      topics.add(element.name);
+      values.add(element.value.toString());
+      status.add(false);
+      total += element.value;
+    }
+
     return SingleChildScrollView(
       child: Column(
         children: [

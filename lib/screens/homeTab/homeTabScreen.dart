@@ -105,9 +105,17 @@ class _HomeTabScreenState extends State<HomeTabScreen> {
                 ),
                 onPressed: () {
                   if (_currentIndex == 1) {
-                    Navigator.of(context).pushNamed(AppRoutes.ADD_ADDICTION);
+                    Navigator.of(context)
+                        .pushNamed(AppRoutes.ADD_ADDICTION)
+                        .then((value) {
+                      setState(() {});
+                    });
                   } else if (_currentIndex == 2) {
-                    Navigator.of(context).pushNamed(AppRoutes.ADD_EXPENSE);
+                    Navigator.of(context)
+                        .pushNamed(AppRoutes.ADD_EXPENSE)
+                        .then((value) {
+                      setState(() {});
+                    });
                   }
                 },
               ),
